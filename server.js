@@ -22,7 +22,7 @@ io.on('connection', socket => {
         socket.join(user.room);
 
         // Welcome current user
-        socket.emit('message', formatMessage(botName,'Welcome to Desmos chat!'));
+        socket.emit('message', formatMessage(botName,'Welcome to the chat!'));
 
         // Broadcast when a user connects
         socket.broadcast
